@@ -35,11 +35,12 @@ FOREIGN KEY (category_id) REFERENCES product_category(object_id));
 
 
 -- dummy data product_category
-INSERT INTO product_category (name, created_date) VALUES ('Electronics', '2019-01-01');
-INSERT INTO product_category (name, created_date) VALUES ('Furniture', '2019-01-01');
-INSERT INTO product_category (name, created_date) VALUES ('Stationery', '2019-01-01');
-INSERT INTO product_category (name, created_date) VALUES ('Sports', '2019-01-01');
-INSERT INTO product_category (name, created_date) VALUES ('Hardware', '2019-01-01');
+INSERT INTO product_category (name, created_date) VALUES 
+('Electronics', '2019-01-01'),
+('Furniture', '2019-01-01'),
+('Stationery', current_timestamp),
+('Sports', current_timestamp),
+('Hardware', current_timestamp);
 
 
 -- dummy data sales_order
